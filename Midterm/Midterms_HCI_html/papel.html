@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Papel</title>
+</head>
+
+<body>
+
+    <h1 id="title">Papel</h1>
+
+    <div id="lines"></div>
+
+    <script>
+        document.body.style.backgroundColor = "lightyellow";
+        document.getElementById("title").style.fontFamily = "Arial";
+
+        for (let i = 0; i < 40; i++) {
+            let line = document.createElement("hr");
+            line.style.border = "1px solid green";
+            document.getElementById("title").appendChild(line);
+        }
+    </script>
+
+</body>
+</html>
