@@ -11,7 +11,7 @@ let teams = [];
 // Get teams from BALLDONTLIE API
 fetch(API_URL, {
     headers: {
-        "Authorization": "secret"
+        "Authorization": "d1cba5c8-472a-4f88-b569-4046f3289ee1"
     }
 })
     .then(response => {
