@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #171725;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #00e5ff;
+}
+
+canvas {
+    background: #25253d;
+    border: 3px solid #00e5ff;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+button {
+    padding: 12px 24px;
+    margin: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: #00e5ff;
+    color: #171725;
+}
+
+button:hover {
+    background: #80f3ff;
+}
+
+#message {
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 28px;
+}
+
+#result {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #00e5ff;
+    border-radius: 12px;
+    background: #25253d;
+}
+
+#memeContainer iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 8px;
+}
+
+[hidden] {
+    display: none !important;
+}
+#gameContainer {
+    position: relative;
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+}
+
+#gameContainer canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#gameVideo {
+    position: absolute;
+    inset: 0;
+    display: none;
+    background: #25253d;
+    border: 3px solid #00e5ff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#gameVideo video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+/* Hide the extra result box below the game */
+#result {
+    display: none !important;
+}
